@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardPreventCornerOverlap="false"
+    app:cardCornerRadius="8dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="16dp"
+            android:background="#000">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Recipient Details"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                app:fontFamily="@font/roboto" />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/close_white_ic"
+                android:padding="8dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:clickable="true"
+            android:id="@+id/wait_t_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/rounded_rec_1">
+
+
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:padding="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="right|center_vertical"
+                app:srcCompat="@drawable/arrow_to_checked_2"/>
+            <LinearLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Self Recipient:"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/roboto"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="You will be incarge and disburse payment"
+                    android:textColor="@color/gray_text"
+                    android:textSize="12sp"
+                    app:fontFamily="@font/roboto"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/roboto"
+            android:hint="Recipient Name"
+            android:textSize="14sp"
+            android:textColorHint="@color/gray_text"
+            android:textColor="#000"
+            android:background="@drawable/rounded_rec"
+            />
+
+        <EditText
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/roboto"
+            android:textSize="14sp"
+            android:textColorHint="@color/gray_text"
+            android:hint="Recipient Number"
+            android:textColor="#000"
+            android:background="@drawable/rounded_rec"
+            />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="18dp"
+            android:paddingBottom="8dp">
+
+            <android.support.v7.widget.CardView
+
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="6dp"
+                android:layout_gravity="bottom|center_horizontal"
+                app:cardBackgroundColor="#000"
+                android:layout_marginBottom="2dp"
+                android:id="@+id/fullBookingSubmitBtn">
+
+                <TextView
+                    android:paddingRight="56dp"
+                    android:paddingLeft="56dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="OK"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/roboto"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+            </android.support.v7.widget.CardView>
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</android.support.v7.widget.CardView>
+
+

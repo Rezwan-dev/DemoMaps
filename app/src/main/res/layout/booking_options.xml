@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FFF"
+    android:padding="8dp">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/date_time_btn"
+        android:clickable="true"
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="4dp"
+        app:cardBackgroundColor="@color/light_gray">
+
+
+
+        <ImageView
+            android:id="@+id/panel_1_imv"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:padding="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="right|center_vertical"
+            app:srcCompat="@drawable/arrow_to_checked_2"/>
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Details:"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/roboto"
+                />
+
+            <TextView
+                android:id="@+id/time_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vehicle: Bus (AC) - 27 person \nStart Time: 17 Apr 19, 4:00 PM"
+                android:textColor="@color/gray_text"
+                android:textSize="12sp"
+                app:fontFamily="@font/roboto"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/particularDetailsBtn"
+        android:clickable="true"
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="4dp"
+        app:cardBackgroundColor="@color/light_gray">
+
+
+
+        <ImageView
+            android:id="@+id/panel_2_imv"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:padding="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="right|center_vertical"
+            app:srcCompat="@drawable/arrow_to_checked_2"/>
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Particular Details:"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/roboto"
+                />
+
+            <TextView
+                android:id="@+id/panel_2_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What will the vehicle be used for?"
+                android:textColor="@color/gray_text"
+                android:textSize="12sp"
+                app:fontFamily="@font/roboto"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:clickable="true"
+        app:cardUseCompatPadding="true"
+        android:id="@+id/recp_de_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="4dp"
+        app:cardBackgroundColor="@color/light_gray">
+
+
+
+        <ImageView
+            android:id="@+id/rec_panel_imv"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:padding="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="right|center_vertical"
+            app:srcCompat="@drawable/arrow_to_checked_2"/>
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recipient Details:"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/roboto"
+                />
+
+            <TextView
+                android:id="@+id/rec_panel_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Who will be incharge &amp; pay for the trip?"
+                android:textColor="@color/gray_text"
+                android:textSize="12sp"
+                app:fontFamily="@font/roboto"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:clickable="true"
+        app:cardUseCompatPadding="true"
+        android:id="@+id/wait_t_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="4dp"
+        app:cardBackgroundColor="@color/light_gray">
+
+
+
+        <ImageView
+            android:id="@+id/wait_t_panel_imv"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:padding="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="right|center_vertical"
+            app:srcCompat="@drawable/arrow_to_checked_2"/>
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Waiting Time:"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/roboto"
+                />
+
+            <TextView
+                android:id="@+id/wait_t_panel_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Will the driver have to wait for anything? (optional)"
+                android:textColor="@color/gray_text"
+                android:textSize="12sp"
+                app:fontFamily="@font/roboto"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:clickable="true"
+        app:cardUseCompatPadding="true"
+        android:id="@+id/inst_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="4dp"
+        app:cardBackgroundColor="@color/light_gray">
+
+
+
+        <ImageView
+            android:id="@+id/ins_pane_img"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:padding="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="right|center_vertical"
+            app:srcCompat="@drawable/arrow_to_checked_2"/>
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Instructions:"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/roboto"
+                />
+
+            <TextView
+                android:id="@+id/ins_pane_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Any special instructions for the driver? (optional)"
+                android:textColor="@color/gray_text"
+                android:textSize="12sp"
+                app:fontFamily="@font/roboto"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="4dp"
+        android:layout_gravity="bottom|center_horizontal"
+        app:cardBackgroundColor="#000"
+        android:layout_marginBottom="2dp"
+        android:id="@+id/fullBookingConfirmBtn">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Confirm"
+            android:textColor="#FFF"
+            app:fontFamily="@font/roboto"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

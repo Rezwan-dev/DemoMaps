@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/activityView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        >
+        <com.heavygari.heavygaricustomer.base.utils.LoadingView
+            android:clickable="true"
+            android:id="@+id/loadingView"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:clickable="true"
+            android:visibility="gone"
+            android:id="@+id/noInternetView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#BF000000">
+
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/no_internet_ic"/>
+
+            <ImageView
+                android:layout_marginTop="4dp"
+                android:layout_width="40dp"
+                android:layout_height="4dp"
+                android:background="@drawable/shadow"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="No internet connectivity detected"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                app:fontFamily="@font/roboto" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto"
+                android:onClick="openNetworkSettings"
+                android:text="Open network settings"
+                android:textAllCaps="false" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:clickable="true"
+            android:visibility="gone"
+            android:id="@+id/noLocationPermission"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#BF000000">
+
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/no_location_ic"/>
+
+            <ImageView
+                android:layout_marginTop="4dp"
+                android:layout_width="40dp"
+                android:layout_height="4dp"
+                android:background="@drawable/shadow"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Location permission is not granted"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                app:fontFamily="@font/roboto" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto"
+                android:onClick="openAppSettings"
+                android:text="Open app settings"
+                android:textAllCaps="false" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:clickable="true"
+            android:visibility="gone"
+            android:id="@+id/noLocationSettingOn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#BF000000">
+
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/no_location_ic"/>
+
+            <ImageView
+                android:layout_marginTop="4dp"
+                android:layout_width="40dp"
+                android:layout_height="4dp"
+                android:background="@drawable/shadow"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Location needs to be turned on"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                app:fontFamily="@font/roboto" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto"
+                android:onClick="openLocationSettings"
+                android:text="Open location settings"
+                android:textAllCaps="false" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

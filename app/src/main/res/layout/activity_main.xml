@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:title="Log In" />
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/showLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Loading"
+        android:padding="8dp"/>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/hideLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hide Loading"
+        android:padding="8dp"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/showInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show info Snack"
+        android:padding="8dp"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/showError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show error Snack"
+        android:padding="8dp"/>
+
+
+
+</LinearLayout>

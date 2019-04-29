@@ -1,0 +1,18 @@
+
+<rotate
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="90"
+    android:toDegrees="90"
+    android:pivotX="50%"
+    android:pivotY="50%" >
+    <shape
+        android:shape="line"
+        android:top="1dip">
+        <stroke
+            android:width="1dip"
+            />
+        <size
+            android:height="100dp"
+            android:width="500dp"/>
+    </shape>
+</rotate>
