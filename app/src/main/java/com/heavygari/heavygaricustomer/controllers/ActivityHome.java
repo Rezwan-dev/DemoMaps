@@ -16,19 +16,9 @@ import android.support.graphics.drawable.AnimatedVectorDrawableCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.CardView;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.animation.AccelerateDecelerateInterpolator;
-import android.view.animation.AccelerateInterpolator;
-import android.view.animation.Animation;
-import android.view.animation.BounceInterpolator;
-import android.view.animation.CycleInterpolator;
-import android.view.animation.DecelerateInterpolator;
 import android.view.animation.LinearInterpolator;
-import android.view.animation.OvershootInterpolator;
-import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -52,14 +42,11 @@ import com.heavygari.heavygaricustomer.R;
 import com.heavygari.heavygaricustomer.base.BaseActivity;
 import com.heavygari.heavygaricustomer.base.BottomFramgent;
 import com.heavygari.heavygaricustomer.base.mapPathing.RoutingPath;
-import com.heavygari.heavygaricustomer.base.utils.BetterBounceInterpolator;
 import com.heavygari.heavygaricustomer.base.utils.CommonAnimation;
 import com.heavygari.heavygaricustomer.base.utils.GPSTracker;
-import com.heavygari.heavygaricustomer.base.utils.Print;
 
 import java.util.Calendar;
 import java.util.Date;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class ActivityHome extends BaseActivity implements OnMapReadyCallback, FragmentDrawer.OnDrawerInteractionListener {
